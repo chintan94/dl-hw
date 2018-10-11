@@ -66,9 +66,7 @@ def relu_forward(x):
     Returns a tuple of:
     - out: output, of the same shape as x
     """
-
-    x[x<0] = 0
-    out = x
+    out = np.maximum(0, x)
     
     return out
 
