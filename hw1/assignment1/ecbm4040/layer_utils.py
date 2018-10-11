@@ -54,15 +54,15 @@ class DenseLayer(FullyConnectedLayer):
         Returns:
         - out: output of shape (N, output_dim)
         """
-        ################################################
-        #TODO: out = ReLU(X*W + b). Use functions in   #
-        #layer_funcs.py                                #
-        ################################################
 
-        
-        ################################################
-        #              END OF YOUR CODE                #
-        ################################################
+        self.X = X
+        w = self.params[0]
+        b = self.params[1]
+
+        out = affine_forward(X, w, b)
+        self.A = out
+        out = relu_forward(out)
+
         return out
     
     def backward(self, dout):
@@ -81,15 +81,10 @@ class DenseLayer(FullyConnectedLayer):
         dX = np.zeros_like(X)
         dW = np.zeros_like(W)
         db = np.zeros_like(b)
-        ################################################
-        #TODO: derive the gradients wst to X, W, b. Use# 
-        #layer_funcs.py                                #
-        ################################################
 
-
-        ################################################
-        #              END OF YOUR CODE                #
-        ################################################
+        dA = relu_backward(dout, A)
+        dX, dW, db = affine_backward(dA, X, W, b)
+        
         self.gradients = [dW, db]
         
         return dX
@@ -126,14 +121,10 @@ class AffineLayer(FullyConnectedLayer):
         - out: output of shape (N, hidden_dim)
         """
         W, b = self.params
-        ######################################################
-        #TODO: out = X*W + b. Use functions in layer_funcs.py#
-        ######################################################
 
-        
-        #####################################################
-        #                   END OF YOUR CODE                #
-        #####################################################
+        self.X = X
+        out = affine_forward(X, W, b)
+
         return out
     
     def backward(self, dout):
@@ -153,15 +144,9 @@ class AffineLayer(FullyConnectedLayer):
         dX = np.zeros_like(X)
         dW = np.zeros_like(W)
         db = np.zeros_like(b)
-        ################################################
-        #TODO: derive the gradients wrt to X, W, b. Use# 
-        #layer_funcs.py                                #
-        ################################################
 
-        
-        ################################################
-        #              END OF YOUR CODE                #
-        ################################################
+        dX, dW, db = affine_backward(dout, X, W, b)
+
         self.gradients = [dW, db]
         
         return dX
