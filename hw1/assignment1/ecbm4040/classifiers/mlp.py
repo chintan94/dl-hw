@@ -23,7 +23,7 @@ class MLP(object):
         """
         self.num_layers = len(hidden_dims) + 1
         self.reg = reg
-        
+        self.velocity = [0,0,0,0,0,0]
         dims = [input_dim] + hidden_dims
         layers = []
         for i in range(len(dims)-1):
@@ -91,7 +91,7 @@ class MLP(object):
         layer1, layer2, layer3 = self.layers[0], self.layers[1], self.layers[2]
 
         params = layer1.params + layer2.params + layer3.params
-        grads = layer1.gradients + layer2.gradients + layer3.gradients
+        grads = layer1.gradients + layer2.gradients + layer3.gradients  
 
         # Add L2 regularization
         reg = self.reg
