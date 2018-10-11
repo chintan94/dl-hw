@@ -55,28 +55,26 @@ def svm_loss_vectorized(W, X, y, reg):
     """
     loss = 0.0
     dW = np.zeros(W.shape).astype('float') # initialize the gradient as zero
+  	num_train = X.shape[0]
 
-    #############################################################################
-    # TODO:                                                                     #
-    # Implement a vectorized version of the structured SVM loss, storing the    #
-    # result in loss.Do not forget the regularization!                                                           #
-    #############################################################################
+    scores = np.dot(X,W)
+    correct_scores = (np.ones(scores.shape).T * scores[range(scores.shape[0]), y]).T
+    margin = scores - correct_scores + np.ones(scores.shape)
+    margin[margin==1]=0
+    L = margin
 
+    margin[margin<0]=0
     
-    #############################################################################
-    # TODO:                                                                     #
-    # Implement a vectorized version of the gradient for the structured SVM     #
-    # loss, storing the result in dW.                                           #
-    #                                                                           #
-    # Hint: Instead of computing the gradient from scratch, it may be easier    #
-    # to reuse some of the intermediate values that you used to compute the     #
-    # loss.                                                                     #
-    #############################################################################
+    loss = np.sum(margin)
+    loss /= num_train
+    loss += 0.5 * reg * np.sum(W * W)
 
-    
-    #############################################################################
-    #                             END OF YOUR CODE                              #
-    #############################################################################
+    L[L>0] = 1
+    inco_count = np.sum(L,axis = 1)
+    L[range(L.shape[0]),y] = - inco_count
 
+    dW = np.dot(X.T, L)
+    dW /= num_train
+    dW += reg * W	
     return loss, dW
     
