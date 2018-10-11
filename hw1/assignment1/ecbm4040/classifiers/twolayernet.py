@@ -30,6 +30,7 @@ class TwoLayerNet(object):
         self.layer1 = DenseLayer(input_dim, hidden_dim, weight_scale=weight_scale)
         self.layer2 = AffineLayer(hidden_dim, num_classes, weight_scale=weight_scale)
         self.reg = reg
+        self.velocity = [0,0,0,0]
 
     def loss(self, X, y):
         """
@@ -86,9 +87,11 @@ class TwoLayerNet(object):
         #TODO: Use SGD or SGD with momentum to update     #
         #variables in layer1 and layer2                   #
         ###################################################
-        if optim == 'SGD':
-        
-        if optim == 'momentum':
+
+        self.velocity = [item[0]*0.8 + learning_rate*item[1] for item in zip(self.velocity,grads)]
+        param = [item[0] - item[1] for item in zip(params, self.velocity)]
+
+        params = param
         
         ###################################################
         #              END OF YOUR CODE                   #
