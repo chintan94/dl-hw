@@ -105,9 +105,9 @@ def softmax_loss(x, y):
 
     num_train = x.shape[0]
 
-    scores = x - np.max(x, axis=1, keepdims=True)
+    scores = x - np.max(np.asarray(x), axis=1, keepdims=True)
     scores_exp = np.exp(scores)
-    score_sum = np.sum(scores_exp, axis=1)
+    score_sum = np.sum(np.asarray(scores_exp), axis=1)
     score_sum = (np.ones(scores.shape).T * score_sum).T
     scores = scores_exp / score_sum
     correct_score = scores[range(num_train), y]
