@@ -67,7 +67,7 @@ class TwoLayerNet(object):
         #              END OF YOUR CODE                   #
         ###################################################
         # Add L2 regularization
-        square_weights = np.sum(layer1.params[0]**2) + np.sum(layer2.params[0]**2)
+        square_weights = np.sum(self.layer1.params[0]**2) + np.sum(self.layer2.params[0]**2)
         loss += 0.5*self.reg*square_weights
         return loss
 
