@@ -18,15 +18,11 @@ def affine_forward(x, w, b):
     Returns a tuple of:
     - out: output, of shape (N, M)
     """
-    ###########################################################################
-    # TODO: Implement the affine forward pass. Store the result in out. You   #
-    # will need to reshape the input into rows.                               #
-    ###########################################################################
 
-    
-    ###########################################################################
-    #                             END OF YOUR CODE                            #
-    ###########################################################################
+    num_train = x.shape[0]
+    num_dim = np.prod(x.shape[1:])
+    x = x.reshape(num_train, num_dim)
+    out = np.dot(x, w) + b
     return out
 
 
@@ -46,14 +42,17 @@ def affine_backward(dout, x, w, b):
     - dw: gradient with respect to w, of shape (D, M)
     - db: gradient with respect to b, of shape (M,)
     """
-    ###########################################################################
-    # TODO: Implement the affine backward pass.                               #
-    ###########################################################################
 
+    dx, dw, db = None, None, None
 
-    ###########################################################################
-    #                             END OF YOUR CODE                            #
-    ###########################################################################
+    num_train = x.shape[0]
+    num_dim = np.prod(x.shape[1:])
+    x = x.reshape(num_train, num_dim)
+
+    db = np.dot(dout.T, np.ones(num_train))
+    dx = np.dot(dout,w.T)
+    dw = np.dot(x.T,dout)
+
     return dx, dw, db
 
 
@@ -67,14 +66,10 @@ def relu_forward(x):
     Returns a tuple of:
     - out: output, of the same shape as x
     """
-    ###########################################################################
-    # TODO: Implement the ReLU forward pass.                                  #
-    ###########################################################################
 
+    x[x<0] = 0
+    out = x
     
-    ###########################################################################
-    #                             END OF YOUR CODE                            #
-    ###########################################################################
     return out
 
 
@@ -88,14 +83,8 @@ def relu_backward(dout, x):
     Returns:
     - dx: gradient with respect to x
     """
-    ###########################################################################
-    # TODO: Implement the ReLU backward pass.                                 #
-    ###########################################################################
+    dx = np.where(x > 0, dout, 0)
 
-
-    ###########################################################################
-    #                             END OF YOUR CODE                            #
-    ###########################################################################
     return dx
 
 
@@ -115,13 +104,21 @@ def softmax_loss(x, y):
     # Initialize the loss.
     loss = 0.0
     dx = np.zeros_like(x)
-    #############################################################################
-    # TODO: You can use the previous softmax loss function here.                #
-    #############################################################################
 
-    
-    #############################################################################
-    #                          END OF YOUR CODE                                 #
-    #############################################################################
+    num_train = x.shape[0]
+
+    scores = x - np.max(x, axis=1, keepdims=True)
+    scores_exp = np.exp(scores)
+    score_sum = np.sum(scores_exp, axis=1)
+    score_sum = (np.ones(scores.shape).T * score_sum).T
+    scores = scores_exp / score_sum
+    correct_score = scores[range(num_train), y]
+    correct_score = np.log(correct_score)
+    loss = np.sum(-correct_score)
+    loss /= num_train
+
+    dx = np.copy(scores)
+    dx[range(num_train), y] -= 1
+    dx /= num_train
 
     return loss, dx
