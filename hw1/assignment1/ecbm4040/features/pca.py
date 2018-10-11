@@ -18,15 +18,16 @@ def pca_naive(X, K):
          component vector
     """
 
-    ###############################################
-    #TODO: Implement PCA by extracting eigenvector#
-    #You may need to sort the eigenvalues to get  #
-    #             the top K of them.              #
-    ###############################################
-
-
-    ###############################################
-    #              End of your code               #
-    ###############################################
+    X = (X - X.mean()) / X.std()
+    X = np.matrix(X)
+    cov = (X.T * X) / X.shape[0]
+    
+    U, S, V = np.linalg.svd(cov)
+    
+    U_reduced = U[:,:K]
+    
+    T=S/S.sum()    
+    
+    P=U_reduced.T
     
     return (P, T)
