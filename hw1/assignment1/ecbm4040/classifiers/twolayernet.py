@@ -47,13 +47,20 @@ class TwoLayerNet(object):
         ###################################################
         #TODO: Feedforward                                #
         ###################################################
+        out1 = self.layer1.feedforward(X)
+        out2 = self.layer2.feedforward(out1)
 
+        losss, dsoft = softmax_loss(out2, y)
+        self.dsoft = dsoft
+        loss += losss
         
         ###################################################
         #TODO: Backpropogation, here is just one dense    #
         #layer, it should be pretty easy                  #
         ###################################################
         
+        dout1 = self.layer2.backward(self.dsoft)
+        self.layer1.backward(dout1)
         
         ###################################################
         #              END OF YOUR CODE                   #
@@ -108,6 +115,10 @@ class TwoLayerNet(object):
         #TODO: Remember to use functions in class SoftmaxLayer#
         #######################################################
 
+        out1 = self.layer1.feedforward(X)
+        out2 = self.layer2.feedforward(out1)
+
+        predictions = np.argmax(out2, axis=1)
         
         #######################################################
         #                 END OF YOUR CODE                    #

@@ -50,17 +50,28 @@ class MLP(object):
         ###################################################
         #TODO: Feedforward                                #
         ###################################################
+        out1 = self.layers[0].feedforward(X)
+        out2 = self.layers[1].feedforward(out1)
+        out3 = self.layers[2].feedforward(out2)
 
+        # print(out2.shape, y.shape)
+
+        losss, dsoft = softmax_loss(out3, y)
+        self.dsoft = dsoft
+        loss += losss
         
         ###################################################
         #TODO: Backpropogation                            #
         ###################################################
-        
-        
+        dout3 = self.layers[2].backward(self.dsoft)
+        dout2 = self.layers[1].backward(dout3)
+        dout1 = self.layers[0].backward(dout2)
+            
         ###################################################
         # TODO: Add L2 regularization                     #
         ###################################################
-        
+        square_weights = np.sum(self.layers[0].params[0] ** 2) + np.sum(self.layers[1].params[0] ** 2) + np.sum(self.layers[2].params[0] ** 2)
+        loss += 0.5 * reg * square_weights        
         
         ###################################################
         #              END OF YOUR CODE                   #
@@ -75,6 +86,20 @@ class MLP(object):
         ###################################################
         #TODO: Use SGD  to update variables in layers     #
         ###################################################
+
+
+        layer1, layer2, layer3 = self.layers[0], self.layers[1], self.layers[2]
+
+        params = layer1.params + layer2.params + layer3.params
+        grads = layer1.gradients + layer2.gradients + layer3.gradients
+
+        # Add L2 regularization
+        reg = self.reg
+        grads = [grad + reg * params[i] for i, grad in enumerate(grads)]
+
+        self.velocity = [item[0] * 0.8 + learning_rate * item[1] for item in zip(self.velocity, grads)]
+        param = [item[0] - item[1] for item in zip(params, self.velocity)]
+        params = param
 
         
         ###################################################
@@ -102,6 +127,12 @@ class MLP(object):
         #######################################################
         #TODO: Remember to use functions in class SoftmaxLayer#
         #######################################################
+
+        out1 = self.layers[0].feedforward(X)
+        out2 = self.layers[1].feedforward(out1)
+        out3 = self.layers[2].feedforward(out2)
+
+        predictions = np.argmax(out3, axis=1)
 
         
         #######################################################
