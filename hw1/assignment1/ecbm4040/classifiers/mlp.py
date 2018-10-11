@@ -70,7 +70,7 @@ class MLP(object):
         ###################################################
         # TODO: Add L2 regularization                     #
         ###################################################
-        square_weights = np.sum(self.layers[0].params[0] ** 2) + np.sum(self.layers[1].params[0] ** 2) + np.sum(self.layers[2].params[0] ** 2)
+        square_weights = np.sum(np.power(self.layers[0].params[0],2)) + np.sum(np.power(self.layers[1].params[0],2)) + np.sum(np.power(self.layers[2].params[0],2))
         loss += 0.5 * reg * square_weights        
         
         ###################################################
