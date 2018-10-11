@@ -105,7 +105,7 @@ class MLP(object):
         ###################################################
         #              END OF YOUR CODE                   #
         ###################################################
-   
+        num_layers = self.num_layers
         # update parameters in layers
         for i in range(num_layers):
             self.layers[i].update_layer(params[2*i:2*(i+1)])
