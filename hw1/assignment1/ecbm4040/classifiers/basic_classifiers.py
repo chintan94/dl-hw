@@ -45,32 +45,13 @@ class BasicClassifier(object):
         loss_history = []
         for it in range(num_iters):
 
-            #########################################################################
-            # TODO:                                                                 #
-            # Sample batch_size elements from the training data and their           #
-            # corresponding labels to use in this round of gradient descent.        #
-            # Store the data in X_batch and their corresponding labels in           #
-            # y_batch; after sampling X_batch should have shape (batch_size, dim)   #
-            # and y_batch should have shape (batch_size,)                           #
-            #                                                                       #
-            # Hint: Use np.random.choice to generate indices. Sometimes, random     #
-            # choice will be better than training in order.                         #
-            #########################################################################
-
+            batch_index = np.random.choice(X.shape[0], batch_size,replace = False)
+            train_batch = X[batch_index]
+            label_batch = y[batch_index]
+            loss, dW = svm_loss_vectorized(self.W, train_batch, label_batch, reg)
+            loss_history.append(loss)
+            self.W += -learning_rate*dW
             
-            #########################################################################
-            # TODO:                                                                 #
-            # Update the weights using the gradient and the learning rate.          #
-            #########################################################################
-            # perform parameter update
-            
-            # finish SGD
-            if optim == 'SGD':
-            
-            #########################################################################
-            #                       END OF YOUR CODE                                #
-            #########################################################################
-
             if verbose and it % 100 == 0:
                 print('iteration %d / %d: loss %f' % (it, num_iters, loss))
 
@@ -90,11 +71,8 @@ class BasicClassifier(object):
                   array of length N, and each element is an integer giving the predicted
                   class.
         """
-        ###########################################################################
-        # TODO:                                                                   #
-        # Implement this method. Store the predicted labels in y_pred.            #
-        ###########################################################################
-
+        y_pred = np.zeros(X.shape[0])
+        y_pred = np.argmax(np.dot(X,self.W),axis=1)
 
         ###########################################################################
         #                           END OF YOUR CODE                              #
