@@ -29,9 +29,15 @@ class ImageGenerator(object):
         #                                                                     #
         #                                                                     #
         #######################################################################
-        raise NotImplementedError
 
-
+        self.num_of_samples, self.height, self.width, self.channels = x.shape
+        self.x = x.copy()
+        self.y = y.copy()
+        #self.number_of_pixels_translated = 0.0
+        #self.degree_of_rotation = 0.0
+        self.is_horizontal_flip = False
+        self.is_vertical_flip = False
+        self.is_add_noise = False
 
         # One way to use augmented data is to store them after transformation (and then combine all of them to form new data set).
         # Following variables (along with create_aug_data() function) is one kind of implementation.
@@ -95,7 +101,21 @@ class ImageGenerator(object):
         #       else:
         #           shuffle(x)
         #           reset batch_count
-        raise NotImplementedError
+        
+        num_batches = self.num_of_samples//batch_size
+        batch_count=1e100
+        while True:
+            if (batch_count < num_batches):
+                X_out = self.x[batch_count*batch_size:(batch_count+1)*batch_size]
+                y_out = self.y[batch_count*batch_size:(batch_count+1)*batch_size]
+                batch_count +=1
+                yield(X_out,y_out)
+            else:
+                if shuffle:
+                    index = np.random.choice(self.num_of_samples,self.num_of_samples,replace=False)
+                    self.x = self.x[index]
+                    self.y = self.y[index]
+                batch_count = 0
         #######################################################################
         #                                                                     #
         #                                                                     #
@@ -109,7 +129,14 @@ class ImageGenerator(object):
         Plot the top 16 images (index 0~15) for visualization.
         :param images: images to be shown
         """
-        raise NotImplementedError
+        
+        X_show = self.x[:16,:,:,:]
+        r = 4
+        f, axarr = plt.subplots(r, r, figsize=(8,8))
+        for i in range(r):
+            for j in range(r):
+                img = X_show[r*i+j]
+                axarr[i][j].imshow(img)
         #######################################################################
         #                                                                     #
         #                                                                     #
@@ -131,7 +158,11 @@ class ImageGenerator(object):
         # example, if you shift 3 pixels to the left, append the left-most 3 columns that are out of boundary to the
         # right edge of the picture.
         # Hint: Numpy.roll (https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.roll.html)
-        raise NotImplementedError
+        self.shift_height = shift_height
+        self.shift_width = shift_width
+        self.x = np.roll(self.x,shift_height,axis=1)
+        self.x = np.roll(self.x,shift_width,axis=2)
+        
         #######################################################################
         #                                                                     #
         #                                                                     #
@@ -149,7 +180,9 @@ class ImageGenerator(object):
         """
         # TODO: Implement the rotate function. Remember to record the value of
         # rotation degree.
-        raise NotImplementedError
+        
+        self.x = rotate(self.x,angle=angle,axes=(1,2),reshape=False)
+        self.rotation_degree = angle
         #######################################################################
         #                                                                     #
         #                                                                     #
@@ -166,7 +199,17 @@ class ImageGenerator(object):
         """
         # TODO: Implement the flip function. Remember to record the boolean values is_horizontal_flip and
         # is_vertical_flip.
-        raise NotImplementedError
+        if mode == 'h':
+            self.x = np.flip(self.x,axis=2)
+            self.is_horizontal_flip = True
+        if mode == 'v':
+            self.x = np.flip(self.x,axis=1)
+            self.is_vertical_flip = True
+        if mode == 'hv':
+            self.x = np.flip(self.x,axis=2)
+            self.is_horizontal_flip = True
+            self.x = np.flip(self.x,axis=1)
+            self.is_vertical_flip = True
         #######################################################################
         #                                                                     #
         #                                                                     #
@@ -186,7 +229,12 @@ class ImageGenerator(object):
         # TODO: Implement the add_noise function. Remember to record the
         # boolean value is_add_noise. You can try uniform noise or Gaussian
         # noise or others ones that you think appropriate.
-        raise NotImplementedError
+        
+        self.is_add_noise = True
+        num_noise_samples = int(self.num_of_samples*portion)
+        noise_mask = np.random.choice(self.num_of_samples,size=num_noise_samples,replace=False)
+        self.x[noise_mask] = self.x[noise_mask]+amplitude*np.random.randn(num_noise_samples,                                   
+                                                        self.height, self.width, self.channels)
         #######################################################################
         #                                                                     #
         #                                                                     #

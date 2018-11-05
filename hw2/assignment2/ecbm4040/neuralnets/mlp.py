@@ -105,7 +105,11 @@ class MLP(object):
             # TODO: Add batch normalization here           #
             ###############################################
             if use_bn:
-                pass
+                gamma = params["bn_gamma_{}".format(i)]
+                beta = params["bn_beta_{}".format(i)]
+                cache_name = "bn_{}".format(i)
+                x, cache[cache_name] = bn_forward(x, gamma, beta, bn_params[i], "train")               
+                
             ###############################################
             # END OF BATCH NORMALIZATION                   #
             ###############################################   
@@ -117,7 +121,8 @@ class MLP(object):
             # TODO: Add dropout here                       #
             ###############################################
             if dropout_config['enabled']:
-                pass
+                cache_name = "dropout_{}".format(i)
+                x, cache[cache_name] = dropout_forward(x, dropout_config, "train")
             ###############################################
             # END OF DROPOUT                               #
             ###############################################
@@ -141,7 +146,7 @@ class MLP(object):
             # TODO: Add dropout here                       #
             ###############################################
             if dropout_config["enabled"]:
-                pass
+                dx = dropout_backward(dx, cache["dropout_{}".format(j)])
             ###############################################
             # END OF DROPOUT                               #
             ###############################################     
@@ -152,7 +157,9 @@ class MLP(object):
             # TODO: Add batch normalization here           #
             ###############################################
             if use_bn:
-                pass
+                dx, dgamma, dbeta = bn_backward(dx, cache["bn_{}".format(j)])
+                grads["bn_gamma_{}".format(j)] = dgamma
+                grads["bn_beta_{}".format(j)] = dbeta                
             ###############################################
             # END OF BATCH NORMALIZATION                   #
             ###############################################   
@@ -203,7 +210,9 @@ class MLP(object):
             # TODO: Add batch normalization here           #
             ###############################################
             if use_bn:
-                pass
+                gamma = params["bn_gamma_{}".format(i)]
+                beta = params["bn_beta_{}".format(i)]
+                x, _ = bn_forward(x, gamma, beta, bn_params[i], "test")                
             ###############################################
             # END OF BATCH NORMALIZATION                   #
             ###############################################   
@@ -214,7 +223,7 @@ class MLP(object):
             # TODO: Add dropout here                       #
             ###############################################
             if dropout_config['enabled']:
-                pass
+                x, _ = dropout_forward(x, dropout_config, "test")                
             ###############################################
             # END OF DROPOUT                               #
             ###############################################

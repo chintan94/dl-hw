@@ -27,7 +27,9 @@ def dropout_forward(x, dropout_config, mode):
         # Remember to return retention mask for   #
         # backward.                               #
         ###########################################
-        raise NotImplementedError
+        
+        cache = np.random.choice([0,1],size=x.shape,p=[1-keep_prob,keep_prob])
+        out = x * cache
         
         ###########################################
         #             END OF YOUR CODE            #
@@ -38,7 +40,7 @@ def dropout_forward(x, dropout_config, mode):
         # TODO: Implement test phase dropout. No #
         # need to use mask here.                 #
         ##########################################
-        raise NotImplementedError
+        out = keep_prob * x
         
         ###########################################
         #             END OF YOUR CODE            #
@@ -111,7 +113,12 @@ def bn_forward(x, gamma, beta, bn_params, mode):
         #      4. remenber to use moving average method to update   #
         #         moving_mean and moving_var in the bn_params       #
         #############################################################
-        raise NotImplementedError
+        
+        current_mean, current_var = np.mean(x,axis=0,keepdims=True), np.var(x,axis=0,keepdims=True)
+        out = gamma*(x-current_mean)/np.sqrt(current_var+eps) + beta
+        moving_mean = decay*moving_mean + (1-decay)*current_mean
+        moving_var = decay*moving_var + (1-decay)*current_var
+        mean,var=current_mean,current_var
         
         #############################################################
         #                       END OF YOUR CODE                    #
@@ -120,8 +127,8 @@ def bn_forward(x, gamma, beta, bn_params, mode):
         #############################################################
         # TODO: Batch normalization forward test mode               #
         #############################################################
-        raise NotImplementedError
-        
+        out = gamma*(x-moving_mean)/np.sqrt(moving_var+eps) + beta
+        mean,var = moving_mean,moving_var        
         #############################################################
         #                       END OF YOUR CODE                    #
         #############################################################

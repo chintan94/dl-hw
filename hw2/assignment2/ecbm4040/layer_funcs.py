@@ -120,6 +120,11 @@ def softmax_loss(x, y):
     return loss, dx
 
 
+def padwithzeros(vector, pad_width, iaxis, kwargs):
+        vector[:pad_width[0]] = 0
+        vector[-pad_width[1]:] = 0
+        return vector
+    
 def conv2d_forward(x, w, b, pad, stride):
     """
     A Numpy implementation of 2-D image convolution.
@@ -151,8 +156,24 @@ def conv2d_forward(x, w, b, pad, stride):
     #                                                                     #
     #                                                                     #
     #######################################################################
-    raise NotImplementedError
-
+    batch, height, width, channels = x.shape
+    num_of_filters, filter_height, filter_width, channels = w.shape
+    
+    x_pad = np.lib.pad(x,1,padwithzeros)[pad:-pad,:,:,pad:-pad]
+    
+    new_height = ((height - filter_height + 2 * pad) // stride) + 1
+    new_width = ((width - filter_width + 2 * pad) // stride) + 1
+    
+    out = np.zeros([batch,new_height,new_width,num_of_filters])
+    for bat in range(batch):
+        #x_pad = np.array([np.lib.pad(x[bat,:,:,c],1,padwithzeros) for c in range(3)]).transpose([1,2,0])
+        for hei in range(new_height):
+            for wid in range(new_width):
+                for f in range(num_of_filters):
+                    out[bat,hei,wid,f] = np.sum(x_pad[bat, 
+                                                      stride* hei : stride * hei + filter_height, 
+                                                      stride * wid: stride * wid + filter_width,:] * w[f,:,:,:]) + b[f]
+    return out
 
 def conv2d_backward(d_top, x, w, b, pad, stride):
     """
@@ -184,8 +205,25 @@ def conv2d_backward(d_top, x, w, b, pad, stride):
     #                                                                     #
     #                                                                     #
     #######################################################################
-    raise NotImplementedError
+    
+    batch, height, width, channels = x.shape
+    num_of_filters, filter_height, filter_width, channels = w.shape
+    batch, height_new, width_new, num_of_filters = d_top.shape
+    
+    assert(height_new == ((height - filter_height + 2 * pad) // stride) + 1)
+    assert(width_new == ((width - filter_width + 2 * pad) // stride) + 1)
+    x_pad = np.lib.pad(x,1,padwithzeros)[pad:-pad,:,:,pad:-pad]
+    d_top_rot = np.rot90(d_top,2,(1,2))
 
+    d_w = np.zeros(w.shape)
+    for nof in range(num_of_filters):
+        for fh in range(filter_height):
+            for fw in range(filter_width):
+                for channel in range(channels):
+                    d_w[nof,fh,fw,channel] =  np.sum( x_pad[:,fh:fh+height-height_new+1:stride, 
+                                                   fw:fw+width-width_new+1:stride, channel] * d_top_rot[:,:,:,nof])/batch
+    d_b = np.sum(d_top,axis=(0,1,2))/batch
+    return d_w,d_b
 
 def max_pool_forward(x, pool_size, stride):
     """
@@ -204,7 +242,7 @@ def max_pool_forward(x, pool_size, stride):
     #                                                                     #
     #                                                                     #
     #######################################################################
-    raise NotImplementedError
+    print("## blah blah ble#")
 
 def max_pool_backward(dout, x, pool_size, stride):
     """
@@ -229,4 +267,4 @@ def max_pool_backward(dout, x, pool_size, stride):
     #                                                                     #
     #                                                                     #
     #######################################################################
-    raise NotImplementedError
+    print("## blah blah ble##")
