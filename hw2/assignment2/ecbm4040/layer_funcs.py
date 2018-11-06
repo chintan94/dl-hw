@@ -242,7 +242,25 @@ def max_pool_forward(x, pool_size, stride):
     #                                                                     #
     #                                                                     #
     #######################################################################
-    print("## blah blah ble#")
+    
+    num_train,height,width, channels = x.shape
+    new_height = (height - pool_size)//stride + 1
+    new_widht = (width - pool_size)//stride + 1
+    
+    new_x = np.zeros((num_train,new_height,new_widht,channels))
+    for i in range(num_train):
+        for c in range(channels):
+                for new_h in range(new_height):
+                    new_h_index = new_h*stride
+                    for new_w in range(new_widht):
+                        new_w_index = new_w*stride
+                        x_pool = x[i,new_h_index:new_h_index+pool_size,new_w_index:new_w_index+pool_size,c]
+                        #print(x_convolve.shape)
+                        new_x[i,new_h,new_w,c] = np.max(x_pool)
+
+
+
+    return new_x
 
 def max_pool_backward(dout, x, pool_size, stride):
     """

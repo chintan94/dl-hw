@@ -30,11 +30,12 @@ class ImageGenerator(object):
         #                                                                     #
         #######################################################################
 
-        self.num_of_samples, self.height, self.width, self.channels = x.shape
+        
         self.x = x.copy()
         self.y = y.copy()
-        #self.number_of_pixels_translated = 0.0
-        #self.degree_of_rotation = 0.0
+        self.num_of_samples, self.height, self.width, self.channels = x.shape
+        self.number_of_pixels_translated = 0.0
+        self.degree_of_rotation = 0.0
         self.is_horizontal_flip = False
         self.is_vertical_flip = False
         self.is_add_noise = False
@@ -50,7 +51,6 @@ class ImageGenerator(object):
         self.added = None
         self.x_aug = self.x.copy()
         self.y_aug = self.y.copy()
-        self.N_aug = self.N
 
     def create_aug_data(self):
         # If you want to use function create_aug_data() to generate new dataset, you can perform the following operations in each
