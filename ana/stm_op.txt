@@ -1,0 +1,1182 @@
+Partition 1
+Dictionary length : 1416
+Topic : 0
+Word: great		 Weight: 0.010614209
+Word: shaver		 Weight: 0.010558525
+Word: trimmer		 Weight: 0.010090917
+Word: braun		 Weight: 0.009422046
+Word: good		 Weight: 0.006106662
+Word: product		 Weight: 0.0060879937
+Word: price		 Weight: 0.006003411
+Word: razor		 Weight: 0.0059604505
+Word: shave		 Weight: 0.005374156
+Word: use		 Weight: 0.005164346
+
+
+Topic : 1
+Word: hair		 Weight: 0.0385352
+Word: shave		 Weight: 0.013167379
+Word: razor		 Weight: 0.012207984
+Word: use		 Weight: 0.011986629
+Word: like		 Weight: 0.010442977
+Word: great		 Weight: 0.01043888
+Word: time		 Weight: 0.010080038
+Word: shaver		 Weight: 0.010012524
+Word: product		 Weight: 0.009806503
+Word: good		 Weight: 0.008736635
+
+
+Topic : 2
+Word: product		 Weight: 0.023206074
+Word: use		 Weight: 0.021356542
+Word: hair		 Weight: 0.01754585
+Word: like		 Weight: 0.013010031
+Word: skin		 Weight: 0.012496419
+Word: work		 Weight: 0.009162713
+Word: time		 Weight: 0.008165289
+Word: got		 Weight: 0.006905427
+Word: water		 Weight: 0.0063609234
+Word: better		 Weight: 0.006302428
+
+
+Topic : 3
+Word: shaver		 Weight: 0.017316384
+Word: cleaning		 Weight: 0.016824799
+Word: use		 Weight: 0.012618211
+Word: skin		 Weight: 0.012498849
+Word: braun		 Weight: 0.011892286
+Word: new		 Weight: 0.008072464
+Word: great		 Weight: 0.0075067454
+Word: clean		 Weight: 0.007376889
+Word: unit		 Weight: 0.006752594
+Word: shave		 Weight: 0.0064309128
+
+
+Topic : 4
+Word: quot		 Weight: 0.016576704
+Word: use		 Weight: 0.011278561
+Word: product		 Weight: 0.0105578555
+Word: great		 Weight: 0.008820267
+Word: love		 Weight: 0.008355398
+Word: hands		 Weight: 0.0077974545
+Word: time		 Weight: 0.007317965
+Word: like		 Weight: 0.006642741
+Word: skin		 Weight: 0.006526183
+Word: wax		 Weight: 0.0063280356
+
+
+Topic : 5
+Word: use		 Weight: 0.006910104
+Word: water		 Weight: 0.00681202
+Word: unit		 Weight: 0.0057644197
+Word: waterpik		 Weight: 0.0057403836
+Word: hair		 Weight: 0.0056529525
+Word: model		 Weight: 0.0056334236
+Word: braun		 Weight: 0.0048954687
+Word: better		 Weight: 0.0039888564
+Word: update		 Weight: 0.003519634
+Word: works		 Weight: 0.0035017983
+
+
+Topic : 6
+Word: braun		 Weight: 0.011843685
+Word: battery		 Weight: 0.0071843374
+Word: shaver		 Weight: 0.0068897665
+Word: shave		 Weight: 0.005855771
+Word: new		 Weight: 0.004593043
+Word: razor		 Weight: 0.004509206
+Word: cleaning		 Weight: 0.0042393906
+Word: norelco		 Weight: 0.0042125434
+Word: got		 Weight: 0.0037002093
+Word: good		 Weight: 0.0036688407
+
+
+Topic : 7
+Word: hair		 Weight: 0.003313037
+Word: great		 Weight: 0.0030820235
+Word: product		 Weight: 0.0028792743
+Word: face		 Weight: 0.0025891897
+Word: quot		 Weight: 0.002080676
+Word: use		 Weight: 0.0020328467
+Word: like		 Weight: 0.0018631447
+Word: nose		 Weight: 0.0017931393
+Word: amazon		 Weight: 0.0017712953
+Word: store		 Weight: 0.0017132836
+
+
+Topic : 8
+Word: hair		 Weight: 0.014044877
+Word: time		 Weight: 0.0060964753
+Word: dryer		 Weight: 0.0060126004
+Word: like		 Weight: 0.005742057
+Word: quot		 Weight: 0.005647474
+Word: dry		 Weight: 0.0050067515
+Word: model		 Weight: 0.003942851
+Word: old		 Weight: 0.0036523808
+Word: better		 Weight: 0.003340723
+Word: brush		 Weight: 0.003340252
+
+
+Topic : 9
+Word: quot		 Weight: 0.004616258
+Word: use		 Weight: 0.0040478487
+Word: like		 Weight: 0.0033701912
+Word: small		 Weight: 0.0029217945
+Word: water		 Weight: 0.0026963134
+Word: radio		 Weight: 0.0025973448
+Word: sounds		 Weight: 0.0024696805
+Word: little		 Weight: 0.0024128428
+Word: product		 Weight: 0.0023287013
+Word: braun		 Weight: 0.0023139522
+
+
+Topic : 10
+Word: brush		 Weight: 0.029278006
+Word: toothbrush		 Weight: 0.023014123
+Word: teeth		 Weight: 0.022501564
+Word: sonicare		 Weight: 0.015329817
+Word: dentist		 Weight: 0.012006126
+Word: use		 Weight: 0.011728095
+Word: like		 Weight: 0.009232942
+Word: brushing		 Weight: 0.009162601
+Word: clean		 Weight: 0.0089314915
+Word: mouth		 Weight: 0.0076058004
+
+
+Topic : 11
+Word: shaver		 Weight: 0.0041726124
+Word: quot		 Weight: 0.0037046538
+Word: makeup		 Weight: 0.0033993546
+Word: like		 Weight: 0.0033110909
+Word: use		 Weight: 0.0032539635
+Word: great		 Weight: 0.0026925947
+Word: mirror		 Weight: 0.0025415604
+Word: razor		 Weight: 0.002176446
+Word: works		 Weight: 0.0021678733
+Word: shave		 Weight: 0.0020102265
+
+
+Topic : 12
+Word: mask		 Weight: 0.009736982
+Word: skin		 Weight: 0.0042095985
+Word: hair		 Weight: 0.0032784215
+Word: pretty		 Weight: 0.0031564618
+Word: start		 Weight: 0.003093139
+Word: use		 Weight: 0.0030542188
+Word: conditioner		 Weight: 0.002997847
+Word: oil		 Weight: 0.0026656636
+Word: fun		 Weight: 0.0024875756
+Word: dead		 Weight: 0.0024180873
+
+
+Topic : 13
+Word: tub		 Weight: 0.010168774
+Word: mat		 Weight: 0.008743066
+Word: suction		 Weight: 0.0058550746
+Word: product		 Weight: 0.0057857633
+Word: use		 Weight: 0.005081799
+Word: whitening		 Weight: 0.005034892
+Word: time		 Weight: 0.004926301
+Word: work		 Weight: 0.004849503
+Word: cups		 Weight: 0.0047233654
+Word: cleaner		 Weight: 0.0046962462
+
+
+Topic : 14
+Word: razor		 Weight: 0.0056243977
+Word: shave		 Weight: 0.0044727535
+Word: dryer		 Weight: 0.0036913853
+Word: time		 Weight: 0.0033855978
+Word: humidity		 Weight: 0.0031958097
+Word: humidifier		 Weight: 0.0026831485
+Word: hair		 Weight: 0.0025593082
+Word: use		 Weight: 0.0025073874
+Word: amazon		 Weight: 0.0024749518
+Word: unit		 Weight: 0.00242509
+
+
+Partition 2
+Dictionary length : 6236
+Topic : 0
+Word: like		 Weight: 0.01924952
+Word: product		 Weight: 0.01884183
+Word: great		 Weight: 0.012937676
+Word: love		 Weight: 0.010719123
+Word: good		 Weight: 0.0092861345
+Word: color		 Weight: 0.009021653
+Word: use		 Weight: 0.009010726
+Word: smell		 Weight: 0.0075144116
+Word: little		 Weight: 0.0074203545
+Word: buy		 Weight: 0.0060778
+
+
+Topic : 1
+Word: skin		 Weight: 0.039403196
+Word: product		 Weight: 0.0230241
+Word: use		 Weight: 0.017122023
+Word: face		 Weight: 0.012122455
+Word: like		 Weight: 0.010843334
+Word: great		 Weight: 0.009074931
+Word: dry		 Weight: 0.00856622
+Word: products		 Weight: 0.007566787
+Word: good		 Weight: 0.006464427
+Word: day		 Weight: 0.00628886
+
+
+Topic : 2
+Word: shaver		 Weight: 0.01733649
+Word: teeth		 Weight: 0.014126518
+Word: brush		 Weight: 0.011639226
+Word: use		 Weight: 0.010915685
+Word: cleaning		 Weight: 0.009532004
+Word: good		 Weight: 0.0092944885
+Word: clean		 Weight: 0.00905475
+Word: toothbrush		 Weight: 0.008420886
+Word: like		 Weight: 0.008335435
+Word: years		 Weight: 0.007767045
+
+
+Topic : 3
+Word: hair		 Weight: 0.075645626
+Word: product		 Weight: 0.016596789
+Word: use		 Weight: 0.014468783
+Word: iron		 Weight: 0.008772523
+Word: dryer		 Weight: 0.008203627
+Word: like		 Weight: 0.008094111
+Word: great		 Weight: 0.008034732
+Word: shampoo		 Weight: 0.007961546
+Word: dry		 Weight: 0.007847875
+Word: time		 Weight: 0.007273651
+
+
+Topic : 4
+Word: eye		 Weight: 0.036476355
+Word: shadow		 Weight: 0.020363335
+Word: color		 Weight: 0.013164291
+Word: eyes		 Weight: 0.010950223
+Word: laura		 Weight: 0.009037499
+Word: primer		 Weight: 0.008082492
+Word: eyeshadow		 Weight: 0.00695947
+Word: liner		 Weight: 0.0068084206
+Word: look		 Weight: 0.0064140577
+Word: use		 Weight: 0.006361389
+
+
+Topic : 5
+Word: toothbrush		 Weight: 0.013273592
+Word: product		 Weight: 0.010983202
+Word: oral		 Weight: 0.01041384
+Word: use		 Weight: 0.008546999
+Word: better		 Weight: 0.007999099
+Word: teeth		 Weight: 0.007284819
+Word: dentist		 Weight: 0.006146495
+Word: sonicare		 Weight: 0.005864627
+Word: great		 Weight: 0.0055176103
+Word: gums		 Weight: 0.0054252036
+
+
+Topic : 6
+Word: lips		 Weight: 0.0694867
+Word: lip		 Weight: 0.052332144
+Word: gloss		 Weight: 0.0275326
+Word: lipstick		 Weight: 0.01633285
+Word: product		 Weight: 0.013990532
+Word: color		 Weight: 0.010609338
+Word: look		 Weight: 0.008255436
+Word: plump		 Weight: 0.0074471836
+Word: like		 Weight: 0.007310851
+Word: venom		 Weight: 0.007215106
+
+
+Topic : 7
+Word: lines		 Weight: 0.016177004
+Word: surgery		 Weight: 0.01135767
+Word: skin		 Weight: 0.011126935
+Word: product		 Weight: 0.010992183
+Word: plastic		 Weight: 0.010888779
+Word: rejuvinol		 Weight: 0.010868091
+Word: argireline		 Weight: 0.008730927
+Word: botox		 Weight: 0.007926179
+Word: wrinkles		 Weight: 0.007839289
+Word: facial		 Weight: 0.00727535
+
+
+Topic : 8
+Word: razor		 Weight: 0.033992805
+Word: shave		 Weight: 0.033896867
+Word: shaver		 Weight: 0.016407752
+Word: shaving		 Weight: 0.016117135
+Word: braun		 Weight: 0.011669624
+Word: blade		 Weight: 0.011305698
+Word: close		 Weight: 0.011118809
+Word: blades		 Weight: 0.010960283
+Word: like		 Weight: 0.009915786
+Word: electric		 Weight: 0.009666613
+
+
+Topic : 9
+Word: trimmer		 Weight: 0.028059196
+Word: nails		 Weight: 0.01798261
+Word: nail		 Weight: 0.016665353
+Word: polish		 Weight: 0.010538577
+Word: vacuum		 Weight: 0.009657599
+Word: product		 Weight: 0.009114102
+Word: use		 Weight: 0.009016691
+Word: beard		 Weight: 0.008152682
+Word: good		 Weight: 0.0069979173
+Word: trimming		 Weight: 0.0064176177
+
+
+Topic : 10
+Word: hair		 Weight: 0.024225049
+Word: use		 Weight: 0.013172064
+Word: time		 Weight: 0.012136196
+Word: hairs		 Weight: 0.009417774
+Word: product		 Weight: 0.009349107
+Word: legs		 Weight: 0.009170467
+Word: like		 Weight: 0.008790389
+Word: pain		 Weight: 0.007787974
+Word: trimmer		 Weight: 0.0069063124
+Word: thing		 Weight: 0.006832038
+
+
+Topic : 11
+Word: mousse		 Weight: 0.023678077
+Word: mirror		 Weight: 0.016846893
+Word: mirrors		 Weight: 0.00961868
+Word: hair		 Weight: 0.0093020955
+Word: use		 Weight: 0.008411189
+Word: magnification		 Weight: 0.0041398257
+Word: like		 Weight: 0.0032378524
+Word: curls		 Weight: 0.0032264653
+Word: good		 Weight: 0.003002994
+Word: product		 Weight: 0.0028615012
+
+
+Topic : 12
+Word: scent		 Weight: 0.034891758
+Word: like		 Weight: 0.021765616
+Word: smell		 Weight: 0.02088361
+Word: perfume		 Weight: 0.015474494
+Word: fragrance		 Weight: 0.0147250835
+Word: love		 Weight: 0.013178154
+Word: smells		 Weight: 0.011890282
+Word: fresh		 Weight: 0.00813168
+Word: day		 Weight: 0.008024886
+Word: wear		 Weight: 0.007996786
+
+
+Topic : 13
+Word: quot		 Weight: 0.03770476
+Word: sinus		 Weight: 0.014110149
+Word: nasal		 Weight: 0.008624322
+Word: mat		 Weight: 0.00855399
+Word: product		 Weight: 0.0062128054
+Word: hair		 Weight: 0.005741966
+Word: use		 Weight: 0.005689203
+Word: sleep		 Weight: 0.004906845
+Word: asleep		 Weight: 0.004044556
+Word: yoga		 Weight: 0.003945849
+
+
+Topic : 14
+Word: skin		 Weight: 0.029848149
+Word: oil		 Weight: 0.027014658
+Word: cream		 Weight: 0.015410875
+Word: products		 Weight: 0.013570817
+Word: ingredients		 Weight: 0.012000422
+Word: body		 Weight: 0.01027028
+Word: butter		 Weight: 0.009128187
+Word: use		 Weight: 0.0091265645
+Word: extract		 Weight: 0.008788085
+Word: healing		 Weight: 0.008260783
+
+
+Partition 3
+Dictionary length : 6496
+Topic : 0
+Word: shaver		 Weight: 0.012600389
+Word: use		 Weight: 0.012267473
+Word: shave		 Weight: 0.011457532
+Word: razor		 Weight: 0.010773504
+Word: great		 Weight: 0.010017423
+Word: good		 Weight: 0.009291022
+Word: like		 Weight: 0.009247524
+Word: hair		 Weight: 0.00817523
+Word: time		 Weight: 0.007928535
+Word: product		 Weight: 0.0073904046
+
+
+Topic : 1
+Word: skin		 Weight: 0.028252192
+Word: product		 Weight: 0.018877702
+Word: like		 Weight: 0.014468743
+Word: use		 Weight: 0.013756059
+Word: great		 Weight: 0.008815663
+Word: face		 Weight: 0.008508806
+Word: love		 Weight: 0.008406947
+Word: good		 Weight: 0.007388953
+Word: scent		 Weight: 0.007297636
+Word: products		 Weight: 0.007189842
+
+
+Topic : 2
+Word: product		 Weight: 0.02069527
+Word: use		 Weight: 0.012279852
+Word: like		 Weight: 0.012096262
+Word: hair		 Weight: 0.011620032
+Word: good		 Weight: 0.008452831
+Word: time		 Weight: 0.00830501
+Word: razor		 Weight: 0.0068029976
+Word: shaving		 Weight: 0.0067698034
+Word: shave		 Weight: 0.0062493044
+Word: work		 Weight: 0.0057452465
+
+
+Topic : 3
+Word: wax		 Weight: 0.03187304
+Word: product		 Weight: 0.011510375
+Word: tea		 Weight: 0.009934408
+Word: marks		 Weight: 0.009719927
+Word: use		 Weight: 0.009620532
+Word: stretch		 Weight: 0.009068011
+Word: strips		 Weight: 0.008214965
+Word: watch		 Weight: 0.0066496977
+Word: like		 Weight: 0.0062080696
+Word: baby		 Weight: 0.006059979
+
+
+Topic : 4
+Word: product		 Weight: 0.03716784
+Word: amazon		 Weight: 0.023441987
+Word: great		 Weight: 0.016497826
+Word: price		 Weight: 0.0134015
+Word: order		 Weight: 0.012061394
+Word: received		 Weight: 0.01128064
+Word: shipping		 Weight: 0.011169143
+Word: ordered		 Weight: 0.010584998
+Word: gift		 Weight: 0.009773456
+Word: good		 Weight: 0.009226739
+
+
+Topic : 5
+Word: towel		 Weight: 0.019585263
+Word: towels		 Weight: 0.0165502
+Word: shea		 Weight: 0.015836608
+Word: hair		 Weight: 0.013139284
+Word: butter		 Weight: 0.01201326
+Word: great		 Weight: 0.008034392
+Word: product		 Weight: 0.0060375487
+Word: best		 Weight: 0.0058139074
+Word: win		 Weight: 0.0057026166
+Word: microfiber		 Weight: 0.005055248
+
+
+Topic : 6
+Word: chair		 Weight: 0.016241264
+Word: love		 Weight: 0.008715887
+Word: diffuser		 Weight: 0.0069420505
+Word: hair		 Weight: 0.0062135924
+Word: product		 Weight: 0.005475438
+Word: assist		 Weight: 0.0051254737
+Word: rollers		 Weight: 0.0050993445
+Word: steam		 Weight: 0.004836746
+Word: dryer		 Weight: 0.0045886743
+Word: great		 Weight: 0.004268412
+
+
+Topic : 7
+Word: product		 Weight: 0.019906491
+Word: skin		 Weight: 0.016311273
+Word: makeup		 Weight: 0.01523513
+Word: foundation		 Weight: 0.012927388
+Word: mascara		 Weight: 0.011505938
+Word: great		 Weight: 0.009800199
+Word: use		 Weight: 0.0097105615
+Word: look		 Weight: 0.008879899
+Word: lashes		 Weight: 0.008393177
+Word: mask		 Weight: 0.008120432
+
+
+Topic : 8
+Word: mirror		 Weight: 0.077545784
+Word: magnification		 Weight: 0.009212178
+Word: lighting		 Weight: 0.008835192
+Word: use		 Weight: 0.007878865
+Word: wall		 Weight: 0.0071464265
+Word: mirrors		 Weight: 0.006898505
+Word: like		 Weight: 0.0057887076
+Word: bulbs		 Weight: 0.005479139
+Word: bulb		 Weight: 0.0054421253
+Word: makeup		 Weight: 0.004918003
+
+
+Topic : 9
+Word: cologne		 Weight: 0.023851484
+Word: eau		 Weight: 0.022056317
+Word: fragrance		 Weight: 0.01303617
+Word: parfum		 Weight: 0.012606549
+Word: men		 Weight: 0.011113009
+Word: great		 Weight: 0.010756541
+Word: toilette		 Weight: 0.010514883
+Word: colognes		 Weight: 0.008522792
+Word: spray		 Weight: 0.0067247488
+Word: women		 Weight: 0.0067095878
+
+
+Topic : 10
+Word: foot		 Weight: 0.015754633
+Word: cinnamon		 Weight: 0.012046732
+Word: gloves		 Weight: 0.0076456983
+Word: like		 Weight: 0.0040268577
+Word: spa		 Weight: 0.0038619204
+Word: juicy		 Weight: 0.0033604023
+Word: product		 Weight: 0.0029859175
+Word: socks		 Weight: 0.0028492901
+Word: halloween		 Weight: 0.0027640257
+Word: tennis		 Weight: 0.002629109
+
+
+Topic : 11
+Word: hair		 Weight: 0.088457026
+Word: product		 Weight: 0.022384679
+Word: use		 Weight: 0.0145196365
+Word: like		 Weight: 0.0132377
+Word: love		 Weight: 0.010673519
+Word: shampoo		 Weight: 0.0106712105
+Word: great		 Weight: 0.00995524
+Word: conditioner		 Weight: 0.008740307
+Word: dry		 Weight: 0.008669323
+Word: iron		 Weight: 0.00849087
+
+
+Topic : 12
+Word: brush		 Weight: 0.045688305
+Word: toothbrush		 Weight: 0.037796978
+Word: teeth		 Weight: 0.035075642
+Word: sonicare		 Weight: 0.020625986
+Word: dentist		 Weight: 0.014133057
+Word: brushing		 Weight: 0.01395392
+Word: gums		 Weight: 0.0124753
+Word: clean		 Weight: 0.012415504
+Word: oral		 Weight: 0.012277274
+Word: use		 Weight: 0.011443342
+
+
+Topic : 13
+Word: brush		 Weight: 0.07117126
+Word: brushes		 Weight: 0.026385555
+Word: bristles		 Weight: 0.014484601
+Word: floss		 Weight: 0.011399079
+Word: size		 Weight: 0.009813484
+Word: like		 Weight: 0.007909382
+Word: small		 Weight: 0.007468919
+Word: handle		 Weight: 0.0070881085
+Word: use		 Weight: 0.0064637377
+Word: pads		 Weight: 0.005957214
+
+
+Topic : 14
+Word: teeth		 Weight: 0.022908239
+Word: nails		 Weight: 0.02247441
+Word: product		 Weight: 0.02156003
+Word: nail		 Weight: 0.02021622
+Word: taste		 Weight: 0.012703859
+Word: mouth		 Weight: 0.011917415
+Word: polish		 Weight: 0.010314374
+Word: use		 Weight: 0.007815319
+Word: toothpaste		 Weight: 0.0076078023
+Word: whitening		 Weight: 0.0074106567
+
+
+Partition 4
+Dictionary length : 6408
+Topic : 0
+Word: product		 Weight: 0.029612355
+Word: great		 Weight: 0.012316828
+Word: good		 Weight: 0.009864133
+Word: time		 Weight: 0.009419292
+Word: amazon		 Weight: 0.009373565
+Word: price		 Weight: 0.009283504
+Word: use		 Weight: 0.008541281
+Word: like		 Weight: 0.00772648
+Word: bought		 Weight: 0.0068595344
+Word: buy		 Weight: 0.0066690254
+
+
+Topic : 1
+Word: hair		 Weight: 0.065034576
+Word: product		 Weight: 0.02324849
+Word: use		 Weight: 0.014360594
+Word: like		 Weight: 0.013160462
+Word: love		 Weight: 0.01070402
+Word: great		 Weight: 0.010553631
+Word: shampoo		 Weight: 0.009095339
+Word: color		 Weight: 0.008813102
+Word: dry		 Weight: 0.0068494724
+Word: conditioner		 Weight: 0.006698022
+
+
+Topic : 2
+Word: like		 Weight: 0.021273507
+Word: scent		 Weight: 0.020170681
+Word: love		 Weight: 0.019117843
+Word: smell		 Weight: 0.015967648
+Word: color		 Weight: 0.011542462
+Word: perfume		 Weight: 0.011416995
+Word: great		 Weight: 0.010675101
+Word: fragrance		 Weight: 0.009428695
+Word: smells		 Weight: 0.008953492
+Word: bottle		 Weight: 0.008926375
+
+
+Topic : 3
+Word: gold		 Weight: 0.018062236
+Word: thumb		 Weight: 0.01704195
+Word: nail		 Weight: 0.007933648
+Word: sucking		 Weight: 0.0077215633
+Word: paint		 Weight: 0.0070561506
+Word: product		 Weight: 0.005749586
+Word: stop		 Weight: 0.005341048
+Word: nails		 Weight: 0.0050631408
+Word: old		 Weight: 0.0045089684
+Word: like		 Weight: 0.0044895043
+
+
+Topic : 4
+Word: soap		 Weight: 0.019171726
+Word: lip		 Weight: 0.017173024
+Word: lips		 Weight: 0.014805339
+Word: product		 Weight: 0.014676392
+Word: butter		 Weight: 0.013053591
+Word: great		 Weight: 0.0128098065
+Word: like		 Weight: 0.010784231
+Word: oil		 Weight: 0.009067348
+Word: good		 Weight: 0.008864723
+Word: use		 Weight: 0.008605869
+
+
+Topic : 5
+Word: skin		 Weight: 0.031330902
+Word: product		 Weight: 0.019826742
+Word: use		 Weight: 0.015936302
+Word: face		 Weight: 0.0134465685
+Word: like		 Weight: 0.012230145
+Word: good		 Weight: 0.008029611
+Word: great		 Weight: 0.0072678733
+Word: cream		 Weight: 0.007114542
+Word: dry		 Weight: 0.0064312937
+Word: day		 Weight: 0.0060342103
+
+
+Topic : 6
+Word: que		 Weight: 0.019523801
+Word: muy		 Weight: 0.015965285
+Word: producto		 Weight: 0.013271667
+Word: recomiendo		 Weight: 0.009323992
+Word: por		 Weight: 0.008455042
+Word: este		 Weight: 0.0081800865
+Word: para		 Weight: 0.008069375
+Word: todo		 Weight: 0.0077445596
+Word: esta		 Weight: 0.007633893
+Word: excelente		 Weight: 0.0076277116
+
+
+Topic : 7
+Word: decay		 Weight: 0.008093071
+Word: urban		 Weight: 0.00788049
+Word: like		 Weight: 0.0064908126
+Word: magnesium		 Weight: 0.0064361845
+Word: dri		 Weight: 0.005770522
+Word: certain		 Weight: 0.0055700475
+Word: line		 Weight: 0.005298063
+Word: use		 Weight: 0.005244594
+Word: oil		 Weight: 0.0052238964
+Word: skin		 Weight: 0.004593283
+
+
+Topic : 8
+Word: razor		 Weight: 0.03308942
+Word: brush		 Weight: 0.032824595
+Word: head		 Weight: 0.02072416
+Word: toothbrush		 Weight: 0.019614618
+Word: shave		 Weight: 0.017889857
+Word: electric		 Weight: 0.014335346
+Word: heads		 Weight: 0.011732405
+Word: shaver		 Weight: 0.010746971
+Word: like		 Weight: 0.009741668
+Word: clean		 Weight: 0.00958236
+
+
+Topic : 9
+Word: product		 Weight: 0.0032471863
+Word: use		 Weight: 0.001885686
+Word: hair		 Weight: 0.0018074604
+Word: razor		 Weight: 0.0017928014
+Word: like		 Weight: 0.0017153958
+Word: time		 Weight: 0.0015727438
+Word: tightening		 Weight: 0.0014111964
+Word: bought		 Weight: 0.0013199889
+Word: great		 Weight: 0.0012764385
+Word: good		 Weight: 0.0012302647
+
+
+Topic : 10
+Word: lashes		 Weight: 0.06116241
+Word: mascara		 Weight: 0.042905737
+Word: lash		 Weight: 0.018043362
+Word: eyelashes		 Weight: 0.012900181
+Word: product		 Weight: 0.00978861
+Word: eye		 Weight: 0.008207886
+Word: look		 Weight: 0.007906324
+Word: brows		 Weight: 0.0064085783
+Word: eyelash		 Weight: 0.006380051
+Word: like		 Weight: 0.0062734205
+
+
+Topic : 11
+Word: zinc		 Weight: 0.009814255
+Word: product		 Weight: 0.009167089
+Word: use		 Weight: 0.008683306
+Word: seat		 Weight: 0.006569172
+Word: hair		 Weight: 0.0064601894
+Word: oxide		 Weight: 0.0056977617
+Word: loss		 Weight: 0.0051251603
+Word: skin		 Weight: 0.004971046
+Word: love		 Weight: 0.0047529237
+Word: uva		 Weight: 0.0045542363
+
+
+Topic : 12
+Word: filter		 Weight: 0.018944336
+Word: belt		 Weight: 0.010426115
+Word: frame		 Weight: 0.0061698006
+Word: filters		 Weight: 0.0058921836
+Word: product		 Weight: 0.0043206504
+Word: hair		 Weight: 0.0035920134
+Word: air		 Weight: 0.0031812699
+Word: time		 Weight: 0.003145626
+Word: like		 Weight: 0.003106275
+Word: waist		 Weight: 0.0030014145
+
+
+Topic : 13
+Word: toothpaste		 Weight: 0.014881785
+Word: feet		 Weight: 0.014770533
+Word: like		 Weight: 0.009127761
+Word: asin		 Weight: 0.008720177
+Word: mascara		 Weight: 0.008083228
+Word: use		 Weight: 0.007694502
+Word: product		 Weight: 0.0072813123
+Word: great		 Weight: 0.0071783233
+Word: stores		 Weight: 0.0071748747
+Word: good		 Weight: 0.007004741
+
+
+Topic : 14
+Word: hair		 Weight: 0.042126637
+Word: use		 Weight: 0.013461367
+Word: like		 Weight: 0.009402947
+Word: time		 Weight: 0.009212493
+Word: iron		 Weight: 0.008668313
+Word: dryer		 Weight: 0.008486152
+Word: hot		 Weight: 0.006542567
+Word: wax		 Weight: 0.0059268936
+Word: little		 Weight: 0.005677121
+Word: hairs		 Weight: 0.0056518824
+
+
+Partition 5
+Dictionary length : 4411
+Topic : 0
+Word: product		 Weight: 0.033043712
+Word: love		 Weight: 0.031963322
+Word: great		 Weight: 0.03154591
+Word: skin		 Weight: 0.01384361
+Word: color		 Weight: 0.012213257
+Word: good		 Weight: 0.0115524195
+Word: price		 Weight: 0.011068913
+Word: like		 Weight: 0.011025537
+Word: time		 Weight: 0.0091340905
+Word: use		 Weight: 0.008828816
+
+
+Topic : 1
+Word: good		 Weight: 0.033351444
+Word: like		 Weight: 0.029271241
+Word: hair		 Weight: 0.02481264
+Word: smell		 Weight: 0.018191552
+Word: works		 Weight: 0.014723631
+Word: nice		 Weight: 0.012155469
+Word: oil		 Weight: 0.011482997
+Word: use		 Weight: 0.010490294
+Word: work		 Weight: 0.010342831
+Word: better		 Weight: 0.009264093
+
+
+Topic : 2
+Word: product		 Weight: 0.03680848
+Word: good		 Weight: 0.027734552
+Word: best		 Weight: 0.019739518
+Word: years		 Weight: 0.012015795
+Word: like		 Weight: 0.011406307
+Word: months		 Weight: 0.009296131
+Word: bought		 Weight: 0.008252175
+Word: new		 Weight: 0.008215558
+Word: old		 Weight: 0.007962155
+Word: working		 Weight: 0.006582577
+
+
+Topic : 3
+Word: hair		 Weight: 0.06538514
+Word: product		 Weight: 0.02241869
+Word: use		 Weight: 0.020190632
+Word: like		 Weight: 0.012162078
+Word: love		 Weight: 0.011885037
+Word: great		 Weight: 0.010310078
+Word: long		 Weight: 0.008406578
+Word: time		 Weight: 0.007828988
+Word: shampoo		 Weight: 0.0074848896
+Word: little		 Weight: 0.007440148
+
+
+Topic : 4
+Word: soap		 Weight: 0.03572121
+Word: eyes		 Weight: 0.03149071
+Word: eye		 Weight: 0.025991771
+Word: skin		 Weight: 0.018231124
+Word: product		 Weight: 0.015321399
+Word: cream		 Weight: 0.010343261
+Word: results		 Weight: 0.009767364
+Word: dark		 Weight: 0.009219213
+Word: area		 Weight: 0.007574552
+Word: bar		 Weight: 0.006719218
+
+
+Topic : 5
+Word: brush		 Weight: 0.022375459
+Word: like		 Weight: 0.01372416
+Word: use		 Weight: 0.013065219
+Word: brushes		 Weight: 0.010699908
+Word: great		 Weight: 0.009193676
+Word: money		 Weight: 0.007909331
+Word: product		 Weight: 0.007908594
+Word: good		 Weight: 0.007877039
+Word: time		 Weight: 0.007220859
+Word: teeth		 Weight: 0.006599558
+
+
+Topic : 6
+Word: wax		 Weight: 0.043177575
+Word: hair		 Weight: 0.014914643
+Word: strip		 Weight: 0.010796219
+Word: strips		 Weight: 0.010047525
+Word: waxing		 Weight: 0.0072998162
+Word: cool		 Weight: 0.0051590535
+Word: love		 Weight: 0.004866881
+Word: like		 Weight: 0.0046277773
+Word: good		 Weight: 0.004566882
+Word: remove		 Weight: 0.004499389
+
+
+Topic : 7
+Word: razor		 Weight: 0.024063181
+Word: shave		 Weight: 0.020341808
+Word: use		 Weight: 0.015405909
+Word: great		 Weight: 0.013743689
+Word: shaving		 Weight: 0.0120857665
+Word: blades		 Weight: 0.0118074175
+Word: blade		 Weight: 0.00886967
+Word: like		 Weight: 0.008830495
+Word: easy		 Weight: 0.008671335
+Word: shaver		 Weight: 0.008333293
+
+
+Topic : 8
+Word: product		 Weight: 0.034292284
+Word: deodorant		 Weight: 0.021449337
+Word: feet		 Weight: 0.010518115
+Word: smell		 Weight: 0.008870102
+Word: like		 Weight: 0.0076579824
+Word: use		 Weight: 0.00755773
+Word: odor		 Weight: 0.0070372173
+Word: spray		 Weight: 0.006154342
+Word: sweat		 Weight: 0.0059960554
+Word: works		 Weight: 0.005432632
+
+
+Topic : 9
+Word: skin		 Weight: 0.0637488
+Word: face		 Weight: 0.022447025
+Word: use		 Weight: 0.022071285
+Word: product		 Weight: 0.016747521
+Word: like		 Weight: 0.011607092
+Word: products		 Weight: 0.011397068
+Word: dry		 Weight: 0.011300198
+Word: cream		 Weight: 0.009317818
+Word: feel		 Weight: 0.009149255
+Word: oil		 Weight: 0.008422392
+
+
+Topic : 10
+Word: wig		 Weight: 0.008523501
+Word: luv		 Weight: 0.0057941778
+Word: rings		 Weight: 0.0056862887
+Word: veins		 Weight: 0.005349315
+Word: drink		 Weight: 0.0032675972
+Word: meh		 Weight: 0.003169923
+Word: like		 Weight: 0.0031338027
+Word: fall		 Weight: 0.0027669696
+Word: brush		 Weight: 0.0025329106
+Word: mitt		 Weight: 0.0025188783
+
+
+Topic : 11
+Word: mouth		 Weight: 0.034061965
+Word: taste		 Weight: 0.031543143
+Word: teeth		 Weight: 0.029037109
+Word: toothpaste		 Weight: 0.027858399
+Word: clean		 Weight: 0.01579101
+Word: mint		 Weight: 0.012006275
+Word: crest		 Weight: 0.01027123
+Word: flavor		 Weight: 0.0099234935
+Word: like		 Weight: 0.009365889
+Word: fresh		 Weight: 0.008037395
+
+
+Topic : 12
+Word: nail		 Weight: 0.036638454
+Word: wig		 Weight: 0.036292493
+Word: polish		 Weight: 0.035917237
+Word: nails		 Weight: 0.024740035
+Word: scar		 Weight: 0.010126072
+Word: plates		 Weight: 0.008261841
+Word: pain		 Weight: 0.008117719
+Word: product		 Weight: 0.008114962
+Word: gel		 Weight: 0.008006066
+Word: works		 Weight: 0.007953799
+
+
+Topic : 13
+Word: gel		 Weight: 0.015247445
+Word: product		 Weight: 0.013294745
+Word: use		 Weight: 0.008388773
+Word: brow		 Weight: 0.0076875957
+Word: color		 Weight: 0.007625999
+Word: aloe		 Weight: 0.0075721066
+Word: like		 Weight: 0.0075674006
+Word: led		 Weight: 0.006926459
+Word: shave		 Weight: 0.0068471753
+Word: nail		 Weight: 0.006746446
+
+
+Topic : 14
+Word: mary		 Weight: 0.01380262
+Word: kay		 Weight: 0.012599361
+Word: glasses		 Weight: 0.009402848
+Word: tin		 Weight: 0.005133993
+Word: bits		 Weight: 0.004976604
+Word: denture		 Weight: 0.0046271733
+Word: yummy		 Weight: 0.004038165
+Word: lens		 Weight: 0.003955427
+Word: blush		 Weight: 0.0034024494
+Word: product		 Weight: 0.0033877403
+
+
+Complete Partition
+Dictionary length : 12172
+Topic : 0
+Word: skin		 Weight: 0.047455408
+Word: product		 Weight: 0.01890305
+Word: like		 Weight: 0.018075066
+Word: face		 Weight: 0.015977463
+Word: use		 Weight: 0.014979384
+Word: smell		 Weight: 0.01202801
+Word: scent		 Weight: 0.010927923
+Word: love		 Weight: 0.009837953
+Word: dry		 Weight: 0.0089553865
+Word: cream		 Weight: 0.008808494
+
+
+Topic : 1
+Word: good		 Weight: 0.023366269
+Word: great		 Weight: 0.017421013
+Word: like		 Weight: 0.011519681
+Word: product		 Weight: 0.011416615
+Word: price		 Weight: 0.010836395
+Word: use		 Weight: 0.010388236
+Word: quality		 Weight: 0.010013153
+Word: works		 Weight: 0.0090156
+Word: size		 Weight: 0.007848388
+Word: little		 Weight: 0.0076812827
+
+
+Topic : 2
+Word: product		 Weight: 0.040334422
+Word: great		 Weight: 0.03711303
+Word: love		 Weight: 0.030461363
+Word: price		 Weight: 0.020067597
+Word: soap		 Weight: 0.018698834
+Word: amazon		 Weight: 0.016407121
+Word: buy		 Weight: 0.012325711
+Word: good		 Weight: 0.01183712
+Word: years		 Weight: 0.011228433
+Word: best		 Weight: 0.010842933
+
+
+Topic : 3
+Word: brush		 Weight: 0.06533588
+Word: brushes		 Weight: 0.022591095
+Word: toothbrush		 Weight: 0.019104712
+Word: teeth		 Weight: 0.018321248
+Word: use		 Weight: 0.016466392
+Word: clean		 Weight: 0.012232408
+Word: like		 Weight: 0.010877776
+Word: water		 Weight: 0.010005525
+Word: bristles		 Weight: 0.009022701
+Word: sonicare		 Weight: 0.00891438
+
+
+Topic : 4
+Word: shave		 Weight: 0.031605538
+Word: razor		 Weight: 0.030887533
+Word: shaver		 Weight: 0.024458788
+Word: shaving		 Weight: 0.016086012
+Word: blades		 Weight: 0.011614285
+Word: close		 Weight: 0.011002436
+Word: blade		 Weight: 0.00995156
+Word: use		 Weight: 0.009919371
+Word: braun		 Weight: 0.009629224
+Word: like		 Weight: 0.008861948
+
+
+Topic : 5
+Word: color		 Weight: 0.049549103
+Word: like		 Weight: 0.02346521
+Word: love		 Weight: 0.017391363
+Word: lip		 Weight: 0.014878435
+Word: colors		 Weight: 0.014807592
+Word: lips		 Weight: 0.014703096
+Word: great		 Weight: 0.0110843405
+Word: nice		 Weight: 0.010855588
+Word: pink		 Weight: 0.00948926
+Word: red		 Weight: 0.00807269
+
+
+Topic : 6
+Word: hair		 Weight: 0.06200476
+Word: dryer		 Weight: 0.021971853
+Word: iron		 Weight: 0.021216849
+Word: hot		 Weight: 0.013882382
+Word: use		 Weight: 0.012793412
+Word: heat		 Weight: 0.012743927
+Word: flat		 Weight: 0.011595156
+Word: like		 Weight: 0.008944599
+Word: time		 Weight: 0.008553787
+Word: long		 Weight: 0.008172128
+
+
+Topic : 7
+Word: hair		 Weight: 0.022151997
+Word: use		 Weight: 0.0221328
+Word: product		 Weight: 0.015794119
+Word: time		 Weight: 0.014304711
+Word: legs		 Weight: 0.011683886
+Word: hairs		 Weight: 0.01151904
+Word: money		 Weight: 0.009858396
+Word: work		 Weight: 0.009699076
+Word: wax		 Weight: 0.009549367
+Word: like		 Weight: 0.009214575
+
+
+Topic : 8
+Word: product		 Weight: 0.02823749
+Word: use		 Weight: 0.013862018
+Word: teeth		 Weight: 0.013167643
+Word: results		 Weight: 0.01051905
+Word: day		 Weight: 0.009884899
+Word: weeks		 Weight: 0.009220557
+Word: like		 Weight: 0.008920335
+Word: work		 Weight: 0.008294367
+Word: difference		 Weight: 0.008250796
+Word: mouth		 Weight: 0.008014383
+
+
+Topic : 9
+Word: hair		 Weight: 0.121385396
+Word: product		 Weight: 0.02746928
+Word: use		 Weight: 0.0171778
+Word: shampoo		 Weight: 0.017024515
+Word: conditioner		 Weight: 0.013104556
+Word: like		 Weight: 0.012667582
+Word: dry		 Weight: 0.01065477
+Word: great		 Weight: 0.009549018
+Word: love		 Weight: 0.009026338
+Word: products		 Weight: 0.008083878
+
+
+Topic : 10
+Word: oil		 Weight: 0.056873076
+Word: butter		 Weight: 0.012986281
+Word: oils		 Weight: 0.011335228
+Word: mask		 Weight: 0.011109021
+Word: natural		 Weight: 0.010848678
+Word: ingredients		 Weight: 0.009024561
+Word: body		 Weight: 0.008940291
+Word: tea		 Weight: 0.008410673
+Word: water		 Weight: 0.008335186
+Word: scent		 Weight: 0.008055185
+
+
+Topic : 11
+Word: product		 Weight: 0.029139575
+Word: amazon		 Weight: 0.010992385
+Word: received		 Weight: 0.009188565
+Word: time		 Weight: 0.007781605
+Word: ordered		 Weight: 0.0077424445
+Word: item		 Weight: 0.0076025706
+Word: order		 Weight: 0.0075194207
+Word: company		 Weight: 0.007156524
+Word: new		 Weight: 0.006378088
+Word: reviews		 Weight: 0.0063481405
+
+
+Topic : 12
+Word: makeup		 Weight: 0.01547848
+Word: eye		 Weight: 0.014513679
+Word: use		 Weight: 0.014433385
+Word: product		 Weight: 0.013255742
+Word: look		 Weight: 0.012876902
+Word: like		 Weight: 0.012805602
+Word: nails		 Weight: 0.0119560575
+Word: eyes		 Weight: 0.011599071
+Word: nail		 Weight: 0.01156413
+Word: love		 Weight: 0.010898594
+
+
+Topic : 13
+Word: mirror		 Weight: 0.07435862
+Word: light		 Weight: 0.0506476
+Word: shower		 Weight: 0.015950644
+Word: wall		 Weight: 0.013095104
+Word: timely		 Weight: 0.012470929
+Word: bathroom		 Weight: 0.011762469
+Word: bright		 Weight: 0.011043057
+Word: great		 Weight: 0.009880955
+Word: lights		 Weight: 0.008854927
+Word: manner		 Weight: 0.008714052
+
+
+Topic : 14
+Word: sunscreen		 Weight: 0.022827417
+Word: sun		 Weight: 0.02036595
+Word: skin		 Weight: 0.013710066
+Word: ingredients		 Weight: 0.012794441
+Word: product		 Weight: 0.01201082
+Word: spf		 Weight: 0.011354562
+Word: products		 Weight: 0.010764926
+Word: lines		 Weight: 0.010393829
+Word: wrinkles		 Weight: 0.009396509
+Word: protection		 Weight: 0.009374732
+
+

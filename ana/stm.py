@@ -92,9 +92,9 @@ time_slice = [len(i) for i in df_list]
 lda_model, corpus, dictionary = lda_modeling_df(concat_dfs[0])
 print("Partition 1")
 print("Dictionary length : " + str(len(dictionary)))
+print('Perplexity: ', lda_model.log_perplexity(corpus))
 print_lda_models(lda_model, dictionary)
 
-lda_model.log_perplexity(corpus)
 vis = pyLDAvis.gensim.prepare(lda_model, corpus, dictionary)
 temp_file = datapath("lda_model1")
 lda_model.save(temp_file)
@@ -107,9 +107,9 @@ lda_model2, corpus2, dictionary2 = lda_modeling_df(concat_dfs[1])
 
 print("Partition 2")
 print("Dictionary length : " + str(len(dictionary2)))
+print('Perplexity: ', lda_model2.log_perplexity(corpus))
 print_lda_models(lda_model2, dictionary2)
 
-lda_model2.log_perplexity(corpus2)
 vis2 = pyLDAvis.gensim.prepare(lda_model2, corpus2, dictionary2)
 
 temp_file = datapath("lda_model2")
@@ -124,9 +124,9 @@ lda_model3, corpus3, dictionary3 = lda_modeling_df(concat_dfs[2])
 
 print("Partition 3")
 print("Dictionary length : " + str(len(dictionary3)))
+print('Perplexity: ', lda_model3.log_perplexity(corpus))
 print_lda_models(lda_model3, dictionary3)
 
-lda_model3.log_perplexity(corpus3)
 vis3 = pyLDAvis.gensim.prepare(lda_model3, corpus3, dictionary3)
 
 
@@ -141,7 +141,9 @@ lda_model4, corpus4, dictionary4 = lda_modeling_df(concat_dfs[3])
 
 print("Partition 4")
 print("Dictionary length : " + str(len(dictionary4)))
+print('Perplexity: ', lda_model4.log_perplexity(corpus))
 print_lda_models(lda_model4, dictionary4)
+
 
 lda_model4.log_perplexity(corpus4)
 vis4 = pyLDAvis.gensim.prepare(lda_model4, corpus4, dictionary4)
@@ -158,6 +160,7 @@ lda_model5, corpus5, dictionary5 = lda_modeling_df(concat_dfs[4])
 
 print("Partition 5")
 print("Dictionary length : " + str(len(dictionary5)))
+print('Perplexity: ', lda_model5.log_perplexity(corpus))
 print_lda_models(lda_model5, dictionary5)
 
 lda_model5.log_perplexity(corpus5)
@@ -174,6 +177,7 @@ flda_model, fcorpus, fdictionary = lda_modeling_df(pd.concat(concat_dfs))
 
 print("Complete Partition")
 print("Dictionary length : " + str(len(fdictionary)))
+print('Perplexity: ', flda_model.log_perplexity(corpus))
 print_lda_models(flda_model, fdictionary)
 
 flda_model.log_perplexity(fcorpus)
